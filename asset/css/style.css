@@ -1,0 +1,220 @@
+@font-face {
+	font-family: "myFont";
+	src: url("../font/Merriweather-Italic.ttf");
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "myFont";
+	height: auto;
+	width: auto;
+	color: #eeedf9 !important;
+	/* color: #eeedf2; */
+}
+body{
+	background: #000000 !important;
+	display: flex;
+	align-items: center;
+ 	justify-content: center;
+}
+.registration-form{
+	width: 520px;
+	padding: 5px;
+	margin: 25px auto;
+	border-radius: 5px;
+	background-color: #1b1925;
+}
+#registrationForm{
+	min-width: 400px;
+	padding: 10px 25px;
+}
+.chat-area header img {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 48px 48px;
+}
+.form-heading{
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+#regSubmit{
+	margin: 15px 0 ;
+	background-color: #9173f7;
+}
+.form-control:focus{
+	color: #212529;
+	/* background-color: #fff; */
+	border-color: #86b7fe;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem #5940ac;
+}
+.form-check{
+	margin-left:5px ;
+}
+.chat-area div span {font-size: 25px;}
+.chat-area div p {font-size: 20px;}
+.chat-name > *{
+	display: flex;
+	height: 85px;
+	align-items: center;
+}
+.chat-box{	
+	border-radius: 5px;
+}
+#backbtn{
+	border-radius: 50px;
+	height: 50px;
+	width: 50px;
+	font-size: 25px;
+	margin: auto 5px auto 0;
+	border:none;
+	box-shadow: 0 0 0 0.25rem #5940ac;
+}
+.chat, .chat-area, .chat-history ,.chat-box {
+	padding: 5px 5px;
+}
+.chat-history{
+	height: 360px;
+	position: relative;
+	overflow-x: auto;
+	margin: 5px 0;
+}
+.flex-column{
+	text-align: left;
+}
+.chat{
+	width: max-content;
+	border-radius: 5px;
+	word-wrap:break-word;
+	margin: 2px 0;
+	position: relative;
+}
+.incoming{
+	/* position: relative; */
+	/* float: left; */
+	background: #258de3;
+} 
+.outgoing{
+	background: #5079c2;
+	position: relative;
+	right: -360px;
+}
+.chat-area{
+	width: 100%;
+}
+#chatText{
+	width: 88%;
+	border-radius: 10px;
+	border:none;
+	margin-right:6px ;
+}
+#chatText:focus{
+	box-shadow: 0 0 0 0.25rem #5940ac;
+}
+#chatText:focus{
+	box-shadow: 1px 1px 15px grey;
+}
+.container .content{
+	width: 500px;
+	margin: 0 auto;
+	/* width: 50px; */
+	height: 50px;
+	border-radius: 50%;
+	background-color: black;
+}
+.container .content .box{
+	width: 420px;
+	margin: 0 auto;
+}
+.container.homepage{
+	width: 500px;
+	height: 250px;
+	margin: 50px;
+	outline: solid 1px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  label{
+	color: #eeedf9;
+  }
+  #list-box img{
+	width: 65px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 48px 48px;
+  }
+  #users-list{
+	display: flex;
+	height: 52vh;
+	overflow: auto;
+  }
+  .user-info{
+	position: absolute;
+	top: 0;
+	right: 45px;
+  }
+  .user-info-name{
+	font-size: 25px;
+	color: antiquewhite;
+	margin: 0 15px;
+  }
+.arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	border-color:  antiquewhite;
+	padding: 3px;
+}
+.user-info-btn{
+	position: relative;
+}
+.user-info-btn i{
+	position: absolute;
+	top: 0;
+}.btn:active{
+	color: black !important;
+}
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+#user-info-options{
+	display: none;
+}
+.up {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+  }
+.user-name{
+	font-size: 31px;
+	color: antiquewhite;
+	margin: 0 15px;
+	display: block;
+}
+.user-fullname{
+	font-size: px;
+	color: antiquewhite;
+	margin: 0 15px;
+	display: block;
+}
+table tr{
+	display: flex;
+justify-content: space-evenly;
+justify-content: space-between;
+width: 127%;
+}
+.user-status{
+	margin: 0 15px;
+	display: block;
+	font-size: 23px;
+	font-weight: 700;
+}
+.success-msg{
+	position: absolute !important;
+	top: 50px;
+	right: 30px;
+
+}
