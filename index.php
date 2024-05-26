@@ -18,9 +18,10 @@ require("function.php");
 <body><?php
 	session_start();
 	if(!empty($_SESSION)){
-		// if(isset($_SESSION['user']))header("Location: homepage.php"); ;
+		if(isset($_SESSION['user']))header("Location: homepage.php"); ;
 		if(isset($_SESSION['warning_msg'])) echo $_SESSION['warning_msg'];
 		if(isset($_SESSION['succes_msg'])) echo $_SESSION['succes_msg'];
+		print_r($_SESSION);
 	}
 	if (isset($_POST['regSubmit'])) {
 		$imgContent = "";
@@ -32,7 +33,6 @@ require("function.php");
 		$userEmailAddress = $_POST['UserEmailAddress'];
 		$fileName = basename($_FILES["Profile_Photo"]["name"]); 
 		$image = $_FILES['Profile_Photo']['tmp_name']; 
-		// print_r($_FILES);
 		if($_FILES["Profile_Photo"]["error"] == 0){
 			$imgContent = addslashes(file_get_contents($image));
 		}

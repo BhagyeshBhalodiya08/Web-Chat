@@ -149,7 +149,6 @@ body{
   #users-list{
 	display: flex;
 	height: 52vh;
-	overflow: auto;
   }
   .user-info{
 	position: absolute;
@@ -191,13 +190,13 @@ transform: rotate(45deg);
 .user-name{
 	font-size: 31px;
 	color: antiquewhite;
-	margin: 0 15px;
+	margin: 0 15px 0 0;
 	display: block;
 }
 .user-fullname{
 	font-size: px;
 	color: antiquewhite;
-	margin: 0 15px;
+	margin: 0 15px 0 0;
 	display: block;
 }
 table tr{

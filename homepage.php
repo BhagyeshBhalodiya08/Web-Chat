@@ -28,7 +28,9 @@ session_start();
         $("body").append(warning_msg)
         $(".close").on("click",function(){
             $(".alert-dismissible").remove()
+            console.info("Asa")
             <?php unset($_SESSION['warning_msg']); ?>
+            <?php unset($_SESSION['succes_msg']); ?>
         })
         $(".user-info-btn").on("click",function(){
             $("#user-info-options").toggle();
